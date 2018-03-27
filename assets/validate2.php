@@ -6,19 +6,26 @@ ini_set('display_errors', 1);
 $name = $email = $message = $recipient = $subject = $email_content = "";
 $errors = array();
 $data = array();
+$recaptcha_secret = "6LfxTh8UAAAAAOUkBms9kLCDS5mu2tbGbRmsbC40";
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-   //check if it's an ajax request, exit if not
-    // if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
-    //     $errors['ajax'] = 'Request must be an Ajax request.';
-    // }
 
-  //check $_POST vars are set, exit if any missing
-  	if(!isset($_POST["name"]) || !isset($_POST["email"]) || !isset($_POST["message"]))
-    {
-  	 $errors['empty'] = 'One or more input fields are empty. Please complete the form and try again.';
+   //check CAPTCHA
+    $client_captcha_response = $_POST['g-recaptcha-response'];
+    $user_ip = $_SERVER['REMOTE_ADDR'];
+
+    $captcha_verify = open_https_url("https://www.google.com/recaptcha/api/siteverify?secret=$your_secret&response=$client_captcha_response&remoteip=$user_ip");
+    $captcha_verify_decoded = json_decode($captcha_verify);
+    if(!$captcha_verify_decoded->success) {
+      $errors['captcha'] = "reCaptcha verification failed.";
     }
+
+    //check $_POST vars are set, exit if any missing
+    	if(!isset($_POST["name"]) || !isset($_POST["email"]) || !isset($_POST["message"]) || !isset($_POST["g-recaptcha-response"])
+      {
+    	 $errors['empty'] = 'One or more input fields are empty. Please complete the form and try again.';
+      }
 
    //sanitize input data using PHP filter_var().
       $name = filter_var(trim($_POST["name"]), FILTER_SANITIZE_STRING);
@@ -30,6 +37,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       	{
       	$errors['invalid'] = 'Please enter a valid email!';
       	}
+        
 
     //Check errors array. If empty, try to send email.    
       if ( ! empty($errors)) {
@@ -62,10 +70,5 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
       }
 
-
-     
-        
-
 }
-
 ?>

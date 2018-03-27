@@ -1,0 +1,310 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Jackie Galarza | Web Developer</title>
+    <meta name="description" content="Jackie Galarza's Web Development Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="jg-logo-30.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+      <style>
+          body {
+              padding-top: 50px;
+              /*padding-bottom: 20px;*/
+          }
+      </style>
+      <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+      <!-- Google Analytics -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-89927571-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+      <!-- TypeKit -->
+      <script>
+       (function(d) {
+         var config = {
+           kitId: 'lyn8bny',
+           scriptTimeout: 3000,
+           async: true
+         },
+         h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+       })(document);
+      </script>
+  </head>
+  <body>
+      <!--[if lt IE 8]>
+          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+      <!-- <div class="container-fluid"> -->
+    <header class="cd-auto-hide-header">
+      <nav class="navbar navbar-expand-md navbar-inverse navbar-fixed-top cd-primary-nav">
+        <div class="container">
+          <p class="nav-brand"><strong>Jackie Galarza</strong> - Web Developer</p>
+        <!-- <a class="navbar-brand" href="#"><img src="assets/img/JG-green-30.png"/></a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" id="nav-icon">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <div class="navbar-nav navs">
+            <a class="nav-item nav-link button" href="#projects">Projects</a>
+            <a class="nav-item nav-link button" href="#about">About</a>
+            <a class="nav-item nav-link button" href="#contact">Contact</a>
+          </div>
+        </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+
+    <!-- <div class="jumbotron">
+      <div class="container d-flex h-100">
+        <div class="row align-self-center mx-auto w-100">
+          <h1 class="w-100">Jackie Galarza</h1>
+          <h2 class="w-100">Web Developer</h2>
+        </div>
+      </div>
+    </div> -->
+
+        <!-- Portfolio Section -->
+        <div id="portfolio">
+            <a name="pfolio"></a>
+            <div id="portfolio_wrapper">
+              <div class="container">
+                <div id="pNav">
+                  <h3>Portfolio</h3>
+                  <!-- <span id ="close"><img src="assets/img/SVG/cross.svg" alt="exit cross"/> -->
+                  <span id ="close"><i class="fa fa-window-close" aria-hidden="true"></i></span>
+                  <div id="arrows">
+                    <!-- <span id="left"><img src="assets/img/SVG/circle-left.svg" alt="left arrow"/>&nbsp;Previous</span> -->
+                    <span id="left"><i class="fa fa-arrow-left"></i>&nbsp;Previous</span>
+                    <span id="right">Next &nbsp;<i class="fa fa-arrow-right"></i></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="previews col-sm-6"><img src=""></div>
+                  <div class="text col-sm-6">
+                    <h4>Company Information</h4>
+                    <p id="cname"></p>
+                    <p id="cservice"></p>
+                    <h4>Project Description</h4>
+                    <p id="pdesc"></p>
+                    <h4 id="weblink"><a class="btn btn-lg" role="button" href="http://www.luminnet.com">Visit Live Site</a></h4>
+                  </div>
+                  <div class="margin"></div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+        <div id="projects">
+          <a name="projects" class="section"></a>
+          <div class="container">
+            <h3>Projects</h3>
+            <div class="row portfolio">
+
+              <div id="ILR" class="col-md-6 col-lg-4 folio">
+                <a href="#portfolio">
+                  <div class="projImg centerWrap" style="background: linear-gradient(rgba(130,96,170,0.6), rgba(130,96,170,0.6)), url('assets/img/ILR-750-q65.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                    <span class="centerVert">
+                      <h2>Inner Light Holistic</h2>
+                      <p>View Project</p>
+                    </span>
+                  </div>
+                </a>
+              </div>
+
+              <div id="LNET" class="col-md-6 col-lg-4 folio">
+                <a href="#portfolio">
+                  <div class="projImg centerWrap" style="background: linear-gradient(rgba(112,184,93,0.6), rgba(112,184,93,0.6)), url('assets/img/luminet2-bw-opt.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                    <span class="centerVert">
+                      <h2>Luminnet</h2>
+                      <p>View Project</p>
+                    <span>
+                  </div>
+                </a>
+              </div>
+
+              <div id="ABMG" class="col-md-6 col-lg-4 folio">
+                <a href="#portfolio">
+                  <div class="projImg centerWrap" style="background: linear-gradient(rgba(69,185,234,0.6), rgba(69,185,234,0.6)), url('assets/img/abmg-home-q60.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                    <span class="centerVert">
+                      <h2>Atlantic Bay Mortgage Group: Blog</h2>
+                      <p>View Project</p>
+                    </span>
+                  </div>
+                </a>
+              </div>
+
+              <div id="STM" class="col-md-6 folio">
+                <a href="#portfolio">
+                  <div class="projImg centerWrap" style="background: linear-gradient(rgba(0,178,125,0.6), rgba(0,178,125,0.6)), url('assets/img/stm-750-opt.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                    <span class="centerVert">
+                      <h2>Southern Trust Mortgage</h2>
+                      <p>View Project</p>
+                    <span>
+                  </div>
+                </a>
+              </div>
+
+              <div id="STMport" class="col-md-6 folio">
+                <a href="#portfolio">
+                  <div class="projImg centerWrap" style="background: linear-gradient(rgba(38,63,83,0.6), rgba(38,63,83,0.6)), url('assets/img/subdomains-750-opt.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                    <span class="centerVert">
+                      <h2>Southern Trust Mortgage Internal Websites</h2>
+                      <p>View Project</p>
+                    <span>
+                  </div>
+                </a>
+              </div>
+
+            </div> <!-- row -->
+          </div> <!-- container -->
+        </div> <!-- #projects -->
+
+        <!-- About Section -->
+        <div id="about">
+          <a name="about" class="section"></a>
+          <div class="container">
+            <h3>About</h3>
+            <div class="row">
+              <div class="col-md-4 reveal">
+              <p>Hello! I specialize in front-end and WordPress web development. I started learning to code for the web in January of 2014. In January of 2016 I was hired by Atlantic Bay Mortgage Group to help improve their websites. I am currently providing web solutions at Southern Trust Mortgage in Virginia Beach.</p>
+              <p>With creative problem solving and resourcefulness, I am able to build fast, responsive, engaging websites that provide simplicity for the end users. When I'm not working on a web development project or learning something new, you might find me practicing photography or hiking with my rhodesian ridgeback.</p>
+            </div>
+            <div class="col-md-4 image reveal">
+              <img src="assets/img/JackieGalarza-web.jpg" alt="Jackie Galarza" class="img-responsive">
+            </div>
+            <div class="col-sm-4 reveal">
+              <h4>Skills</h4>
+              <ul>
+                <li>HTML</li>
+                <li>CSS, SASS</li>
+                <li>Bootstrap</li>
+                <li>JavaScript, jQuery</li>
+                <li>WordPress</li>
+                <li>PHP</li>
+                <li>Git, GitHub</li>
+                <li>Visual design</li>
+                <li>Clear communication</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <a name ="contact" class="section"></a>
+        <div class="container">
+          <div class="row">
+              <h3>Contact</h3>
+              <div class="col-md-10 offset-md-1">
+                <div class="row">
+                <div class="col-md-5">
+                  <p class="highlight">My goal is to build <span>beautiful</span>, <span>considerate</span>, <br/> and <span>effective</span> websites.</p><p class="highlight">What can we create together?</p>
+                  <!-- <p><a class="btn btn-primary btn-lg cta" role="button" data-toggle="modal" data-target="#form-content">Send me a message</a></p> -->
+
+                  <ul class="social">
+                    <a href="https://www.linkedin.com/in/jacquelynmarie" title="linkedin"><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
+                    <a href="https://github.com/Jcqln832" title="github"><li><i class="fa fa-github" aria-hidden="true"></i></li></a>
+                    <a href="https://codepen.io/JacquiG/" title="codepen"><li><i class="fa fa-codepen" aria-hidden="true"></i></li></a>
+                  </ul>
+                </div>
+
+                <div class="col-md-6 offset-md-1">
+                   <!-- <form id="ajax-contact" class="contact" name="contact" action="validate2.php" method="POST"> -->
+                    <!-- <label class="label" for="name">Name</label> -->
+                    <!-- <input type="text" name="name" class="textinput" placeholder="Name" required maxlength="25"> -->
+                    <!-- <label class="label" for="email">Email</label> -->
+                    <!-- <input type="email" name="email" class="textinput" placeholder="Email" required> -->
+                    <!-- <label class="label" for="message">Comments</label> -->
+                    <!-- <textarea class="areainput"  name="message" placeholder="Write your message here..." required maxlength="800"></textarea> -->
+                    <!-- <label class="label" for="captcha">Anti-spam verification</label> -->
+                    <!-- <div class="g-recaptcha" data-sitekey="6LfxTh8UAAAAAMLSqZisWSd1zG-B7URwOjP6RmKJ" name="captcha"></div> -->
+                    <!-- <p style="margin-top:20px;">* All fields required.</p> -->
+                    <!-- <div class="modal-footer"> -->
+                      <!-- <input class="btn" type="submit" value="Send" id="submit"> -->
+                    <!-- </div> -->
+                  <!-- </form>  -->
+                  <p class="highlight">Have a question for me? Need to hire me? Let me know with the form below!</p>
+                  <div class="typeform-widget" data-url="https://jackiegalarza.typeform.com/to/Qhhlt4" data-transparency="100" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 350px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=Qhhlt4&utm_source=typeform.com-11868716-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal Start -->
+            <!-- <div id="form-content" class="modal fade in active" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              	<div class="modal-content">
+		              <div class="modal-header">
+		              	<h4 class="modal-title text-center">Get in touch.</h4>
+		                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          			<span aria-hidden="true">&times;</span>
+		        		</button>
+		              </div>
+	              	<div class="modal-body">
+		               	<div id="form-messages" class="hidden">
+		                  <p></p>
+		                </div>
+
+		                <form id="ajax-contact" class="contact" name="contact" action="validate2.php" method="POST">
+		                  <label class="label" for="name">Name</label>
+		                  <input type="text" name="name" class="textinput" required maxlength="25">
+		                  <label class="label" for="email">Email</label>
+		                  <input type="email" name="email" class="textinput" required>
+		                  <label class="label" for="message">Comments</label>
+		                  <textarea class="areainput"  name="message" required maxlength="800"></textarea>
+		                  <label class="label" for="captcha">Anti-spam verification</label>
+		                  <div class="g-recaptcha" data-sitekey="6LfxTh8UAAAAAMLSqZisWSd1zG-B7URwOjP6RmKJ" name="captcha"></div>
+		                  <p style="margin-top:20px;">* All fields required.</p>
+		                  <div class="modal-footer">
+		                    <input class="btn" type="submit" value="Send" id="submit">
+		                  </div>
+		                </form>
+	            	</div>
+              	</div>
+          	</div>
+        	</div> <!-- form-content -->
+      	  </div>
+    	  </div> <!-- row -->
+    	</div>
+	</div>
+
+
+     <!-- Footer Section -->
+    <!-- <footer>
+      <p>&copy; Jacquelyn Galarza 2016</p>
+    </footer> -->
+
+      <!-- <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script> -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      <script src="assets/js/vendor/gdsmith-easing/jquery.easing.1.3.min.js"></script>
+      <script src="assets/js/vendor/scrollreveal-master/dist/scrollreveal.min.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/mailapp.js"></script>
+
+    </div>
+  </body>
+</html>

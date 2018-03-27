@@ -16,6 +16,7 @@ jQuery(document).ready(function($){
 				$( "#form-messages p" ).innerHTML = "";
 				$( "#formMessages" ).removeClass('error');
 
+
 				// Submit the form using AJAX.
 					$.ajax({
 					  type: 'POST',
@@ -31,6 +32,7 @@ jQuery(document).ready(function($){
 											 $( "#form-messages p" ).innerHTML = data.errors;
 											 $( "#form-messages" ).removeClass( "hidden" );
 											 $( "#formMessages" ).addClass('error');
+											 grecaptcha.reset();
 										 }
 								}
 							})
